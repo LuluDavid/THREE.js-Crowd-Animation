@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js assignment 2</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				color: #000;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+
+				background-color: #ffffff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+				background-color: white;
+			}
+
+			a {
+				color: #0080ff;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="container"></div>
+		<div id="info"><a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - assignment 2 - webgl</div>
+		<script src="three.min.js"></script>
+		<script src="helperFns.js"></script>
+		<script>
+
+			var container, stats;
+
+			var views, scene, renderer;
+
+			var windowWidth, windowHeight;
+
+			view =
+				{
+					left: 0,
+					top: 0,
+					width: 1,
+					height: 1,
+					near:0.1,
+					far:500,
+					background: new THREE.Color( 0, 0, 0 ),
+
+					eye: [ 70, 0, 10],
+					up: [ 0, 0, 1 ],
+					fov: 60,
+
+					length: 35,
+					theta0: 70,
+
+					x0:90,
+					z0:40,
+					
+					updateCamera: function ( camera, scene, bulb ) {
+						p = 0.5 - 0.5 * Math.cos(4*Math.PI*t/(60*T))
+
+						let bulbPosition = new THREE.Vector3(light.position.x,light.position.y,light.position.z);
+						let initialLookAt = new THREE.Vector3(scene.position.x,scene.position.y,scene.position.z+20)
+
+						camera.lookAt( bulbPosition.multiplyScalar(p).addScaledVector(initialLookAt,1-p))
+					}
+				}
+
+			init();
+
+
+		</script>
+	</body>
+</html>
