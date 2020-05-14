@@ -313,7 +313,7 @@ function addABoid(size,clr,position,parentNode,shadows=true){
 function GeneratePlane(z=0,sizex=roomSize,sizey=roomSize){
 	let quadGeometry = new THREE.PlaneBufferGeometry(sizex,sizey)
 
-	let texture = new THREE.TextureLoader().load( 'wood_texture.jpg' );
+	let texture = new THREE.TextureLoader().load( 'textures/wood_texture.jpg' );
 	let material = new THREE.MeshPhysicalMaterial({map:texture, side: THREE.DoubleSide})
 	
 	let plane = new THREE.Mesh(quadGeometry,material)
