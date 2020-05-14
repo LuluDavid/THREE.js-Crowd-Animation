@@ -8,9 +8,9 @@ A light bulb swings left to right inside a wooden room, and a group of boids are
 as moths would do.
 The camera travels around the room with a slow motion when coming closer to the light.
 
-Left ...                   | ... and right
-:-------------------------:|:-------------------------:
-![](https://github.com/LuluDavid/THREE.js-Crowd-Animation/blob/master/pictures/boids1.png)  |  ![](https://github.com/LuluDavid/THREE.js-Crowd-Animation/blob/master/pictures/boids2.png)
+Left ...                  | ... and right
+--------------------------|--------------------------
+![](./pictures/boids1.png)|![](./pictures/boids2.png)
 
 ## The crowd settings
 
