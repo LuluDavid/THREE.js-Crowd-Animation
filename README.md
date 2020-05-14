@@ -1,4 +1,4 @@
-# Crowd-Animation
+# THREE.js Crowd Animation
 
 A demonstration of a THREE.js crowd animation scene.
 
