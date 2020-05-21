@@ -1,6 +1,7 @@
 # THREE.js Crowd Animation
 
 A demonstration of a THREE.js crowd animation scene.
+You can quickly visualize it <a href="https://luludavid.github.io/THREE.js-Crowd-Animation/main.html">here</a>.
 
 ## The scene
 
